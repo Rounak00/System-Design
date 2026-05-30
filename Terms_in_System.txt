@@ -1,0 +1,58 @@
+| Term                 | Meaning                                                                                |
+| -------------------- | -------------------------------------------------------------------------------------- |
+| Throughput           | Number of requests a system can handle per second/minute.                              |
+| Latency              | Time taken to complete a request.                                                      |
+| Response Time        | Total time from request sent to response received.                                     |
+| Timeout              | Maximum time a service waits before giving up.                                         |
+| Concurrency          | Number of requests being processed at the same time.                                   |
+| Parallelism          | Multiple tasks actually running simultaneously on different CPU cores.                 |
+| Scalability          | Ability of a system to handle increased load.                                          |
+| Horizontal Scaling   | Adding more servers/instances.                                                         |
+| Vertical Scaling     | Increasing CPU/RAM of an existing server.                                              |
+| Availability         | Percentage of time the system remains operational.                                     |
+| Reliability          | Ability to consistently work without failures.                                         |
+| Fault Tolerance      | Ability to continue working even when components fail.                                 |
+| Load Balancing       | Distributing traffic across multiple servers.                                          |
+| Rate Limiting        | Restricting how many requests a client can make.                                       |
+| Caching              | Storing frequently accessed data for faster retrieval.                                 |
+| Cache Hit            | Requested data found in cache.                                                         |
+| Cache Miss           | Requested data not found in cache.                                                     |
+| Database Index       | Data structure that speeds up queries.                                                 |
+| Connection Pooling   | Reusing database connections instead of creating new ones.                             |
+| Queue                | Temporary storage for tasks to be processed later.                                     |
+| Message Broker       | System that transports messages between services.                                      |
+| Event Driven         | Services react to events rather than direct calls.                                     |
+| Idempotency          | Same request can be repeated without changing the result.                              |
+| ACID                 | Database guarantees for consistency and reliability.                                   |
+| CAP Theorem          | Distributed systems must trade between consistency and availability during partitions. |
+| Replication          | Copying data across multiple databases/servers.                                        |
+| Sharding             | Splitting data across multiple databases.                                              |
+| Consistency          | All users see the same data.                                                           |
+| Eventual Consistency | Data becomes consistent after some time.                                               |
+| Transaction          | Group of operations that succeed or fail together.                                     |
+| Deadlock             | Processes waiting on each other forever.                                               |
+| Race Condition       | Outcome depends on unpredictable execution order.                                      |
+| Retry                | Reattempting a failed operation.                                                       |
+| Circuit Breaker      | Stops calling a failing service temporarily.                                           |
+| Backpressure         | Slowing incoming traffic when the system is overloaded.                                |
+| Monitoring           | Tracking system health and performance.                                                |
+| Logging              | Recording system events and errors.                                                    |
+| Metrics              | Numerical measurements like CPU, memory, request count.                                |
+| Tracing              | Following a request across multiple services.                                          |
+| SLA                  | Service commitment made to customers.                                                  |
+| SLO                  | Internal reliability target.                                                           |
+| Error Rate           | Percentage of requests that fail.                                                      |
+| CPU Bound            | Performance limited by CPU work.                                                       |
+| I/O Bound            | Performance limited by network, disk, or database operations.                          |
+| Memory Leak          | Memory usage grows because resources aren't released.                                  |
+| Garbage Collection   | Automatic cleanup of unused memory.                                                    |
+| WebSocket            | Persistent two-way connection between client and server.                               |
+| Long Polling         | Client repeatedly waits for server updates.                                            |
+| REST API             | Resource-based HTTP API architecture.                                                  |
+| GraphQL              | API where clients request exactly the data they need.                                  |
+| gRPC                 | High-performance binary RPC protocol.                                                  |
+| Middleware           | Code executed between request and response.                                            |
+| Reverse Proxy        | Server that sits in front of backend servers (e.g., Nginx).                            |
+| CDN                  | Distributed servers delivering content closer to users.                                |
+| JWT                  | Token-based authentication mechanism.                                                  |
+| Session              | Server-side storage of user state.                                                     |
