@@ -1,0 +1,33 @@
+Problem -> Apple's Safari handles web traffic for over 1.4 Billion active users. 
+           But the exact same API that takes 800ms to load on Chrome is taking 4 seconds on Safari. 
+
+Solution -> 
+API response time != Actual page loading time.
+Your backend might return JSON in 50ms, but the browser still has work to do before showing the data.
+
+1. Connection Management
+- Chrome tries to reuse existing internet connections.
+- Safari may close connections when a tab stays in the background.
+- When reopened, Safari might need to establish a new connection, which takes extra time.
+2. Intelligent Tracking Prevention (ITP)
+- Safari has stricter privacy rules.
+- It can block third-party cookies.
+- This can cause authentication issues, especially with external login systems.
+3. Cache Management
+- Cache means temporarily storing data so we don't need to fetch it again.
+- Chrome and Safari manage cached data differently.
+- Safari may clear cached data when the device needs memory.
+- This can cause additional API calls.
+4. CORS Preflight
+- Sometimes, before sending an actual API request, the browser sends an OPTIONS request.
+- This is called a CORS preflight request.
+- It checks whether the server allows the actual request.
+- If the browser doesn't reuse the preflight result, it adds extra network time.
+
+
+PS. 
+What should you remember as a backend developer?
+1. Fast backend doesn't always mean fast user experience.
+2. Different browsers handle connections, caching, cookies and security differently.
+3. Check the browser's Network tab to understand where the time is being spent.
+4. Test your APIs on Chrome, Safari and Firefox.
